@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #0f172a;
+  color: #e5e7eb;
+  transition: 0.3s;
+}
+
+body.light {
+  background: #f8fafc;
+  color: #0f172a;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  list-style: none;
+  padding: 20px;
+}
+
+nav a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.hero {
+  min-height: 100vh;
+  text-align: center;
+}
+
+.hero-content {
+  padding-top: 40px;
+}
+
+.hero img {
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.main-role {
+  font-weight: 600;
+}
+
+.dot {
+  margin: 0 6px;
+}
+
+.typing-line {
+  color: #38bdf8;
+  height: 24px;
+}
+
+.hero-buttons {
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 10px 22px;
+  border-radius: 25px;
+  background: #38bdf8;
+  color: #000;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  margin: 5px;
+}
+
+.btn.secondary {
+  background: transparent;
+  border: 2px solid #38bdf8;
+  color: #38bdf8;
+}
+
+.section {
+  padding: 70px 10%;
+}
+
+.section.dark {
+  background: #020617;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.list li {
+  margin-bottom: 10px;
+}
+
+.projects-grid,
+.profiles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.project-card,
+.profile-card,
+.card {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 18px;
+}
+
+.project-card {
+  cursor: pointer;
+}
+
+.profile-card {
+  text-decoration: none;
+  color: #38bdf8;
+  text-align: center;
+  font-weight: 600;
+}
+
+.links a {
+  margin: 10px;
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  opacity: 0.7;
+}
+
+/* ================= MODAL ================= */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.75);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: #0f172a;
+  padding: 30px;
+  border-radius: 18px;
+  max-width: 500px;
+  width: 90%;
+}
+
+.modal-content.large {
+  width: 90%;
+  height: 90%;
+  background: #fff;
+}
+
+.modal-content.large iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.close {
+  float: right;
+  cursor: pointer;
+  font-size: 22px;
+}

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Goutham Jatoth | Portfolio</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ================= HEADER / HERO ================= -->
+<header class="hero">
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><button id="themeToggle">🌙</button></li>
+    </ul>
+  </nav>
+
+  <div class="hero-content">
+    <img src="profile.jpg" alt="Goutham Jatoth">
+
+    <h1>Goutham Jatoth</h1>
+
+    <h3 class="main-role">
+      Aspiring Software Engineer <span class="dot">•</span> Python & Java Developer
+    </h3>
+
+    <p class="typing-line"><span id="typing"></span></p>
+
+    <div class="hero-buttons">
+      <button class="btn" onclick="openResume()">Preview Resume</button>
+      <a href="resume.pdf" class="btn secondary" download>Download Resume</a>
+    </div>
+  </div>
+</header>
+
+<!-- ================= ABOUT ================= -->
+<section id="about" class="section">
+  <h2>About Me</h2>
+  <p>
+    I am a B.Tech Computer Science (Data Science) student at ACE Engineering College with
+    strong foundations in Data Structures, Java, Python, and core computer science concepts.
+    I enjoy building real-world applications and continuously improving my problem-solving skills.
+  </p>
+</section>
+
+<!-- ================= SKILLS ================= -->
+<section id="skills" class="section dark">
+  <h2>Skills</h2>
+  <ul class="list">
+    <li><b>Programming Languages:</b> Python, Java, C++, JavaScript</li>
+    <li><b>Web Development:</b> HTML, CSS, JavaScript</li>
+    <li><b>Tools:</b> Git, VS Code, Power BI, Tableau, Jupyter</li>
+    <li><b>Frameworks:</b> NumPy, Pandas</li>
+    <li><b>Core Foundations:</b> DSA, OS, Networking, MySQL, DBMS</li>
+  </ul>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section id="projects" class="section">
+  <h2>Projects</h2>
+
+  <div class="projects-grid">
+    <div class="project-card" onclick="openModal('parking')">
+      <h3>Smart Parking System</h3>
+      <p>Java • OOP</p>
+    </div>
+
+    <div class="project-card" onclick="openModal('library')">
+      <h3>Library Management System</h3>
+      <p>Advanced Java</p>
+    </div>
+
+    <div class="project-card" onclick="openModal('contact')">
+      <h3>Contact Book Application</h3>
+      <p>Python</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= EXPERIENCE ================= -->
+<section id="experience" class="section dark">
+  <h2>Experience</h2>
+
+  <div class="card">
+    <h3>Python Developer Intern – Code Veda</h3>
+    <p>Remote | Aug 2025 – Oct 2025</p>
+    <ul>
+      <li>Developed Python projects with mentorship</li>
+      <li>Solved real-world problem statements</li>
+      <li>Improved problem-solving skills</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>AI Developer Intern – VISWAM AI</h3>
+    <p>Summer of AI Intern | June 2025</p>
+    <ul>
+      <li>Built AI models and applications</li>
+      <li>Contributed to open-source projects under IIT-H</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Data Analyst Intern – NullClass EdTech</h3>
+    <ul>
+      <li>Worked on NLP with frontend & backend</li>
+      <li>Developed APIs using Django</li>
+      <li>Presented solutions to industry experts</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= EDUCATION ================= -->
+<section id="education" class="section">
+  <h2>Education</h2>
+
+  <p><b>ACE Engineering College (ACEG)</b></p>
+  <p>B.Tech CSE (Data Science) | 2024 – 2028</p>
+  <p>CGPA: <b>9.41 / 10</b></p><br>
+
+  <p><b>Sri Chaitanya Junior College</b></p>
+  <p>Intermediate – MPC | 2022 – 2024</p>
+  <p>Percentage: <b>89.3%</b></p><br>
+
+  <p><b>Sri Chaitanya School</b></p>
+  <p>SSC | 2021 – 2022</p>
+  <p>CGPA: <b>9.8 / 10</b></p>
+</section>
+
+<!-- ================= CODING PROFILES ================= -->
+<section id="coding" class="section">
+  <h2>Coding Profiles</h2>
+  <div class="profiles-grid">
+    <a href="https://leetcode.com/u/Goutham-Jatoth/" target="_blank" class="profile-card">LeetCode</a>
+    <a href="https://www.codechef.com/users/goutham_jatoth" target="_blank" class="profile-card">CodeChef</a>
+    <a href="https://www.hackerrank.com/profile/jatothugoutham7" target="_blank" class="profile-card">HackerRank</a>
+    <a href="https://codeforces.com/profile/Goutham_Jatoth" target="_blank" class="profile-card">Codeforces</a>
+  </div>
+</section>
+
+<!-- ================= CERTIFICATIONS ================= -->
+<section class="section dark">
+  <h2>Certifications</h2>
+  <ul class="list">
+    <li>CISCO – Operating System</li>
+    <li>IBM (Coursera) – Data Science</li>
+    <li>CodeChef – OOP Java</li>
+    <li>Forage – JPMorgan Software Engineering Simulation</li>
+    <li>Microsoft (Coursera) – Cybersecurity Management</li>
+    <li>Oracle – AI Foundations & Associate</li>
+  </ul>
+</section>
+
+<!-- ================= ACTIVITIES ================= -->
+<section class="section">
+  <h2>Activities</h2>
+  <p>
+    Actively participated in weekly coding challenges on CodeChef, LeetCode,
+    and GeeksforGeeks to improve algorithmic thinking and consistency.
+  </p>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="section dark">
+  <h2>Contact</h2>
+  <p>📞 +91 9391930968</p>
+  <p>📧 jatothugoutham7@gmail.com</p>
+
+  <div class="links">
+    <a href="https://github.com/Goutham-Jatoth" target="_blank">GitHub</a>
+    <a href="https://linkedin.com/in/goutham-jatoth-540200328" target="_blank">LinkedIn</a>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Goutham Jatoth | Portfolio</p>
+</footer>
+
+<!-- ================= PROJECT MODAL ================= -->
+<div id="projectModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h3 id="modalTitle"></h3>
+    <p id="modalDesc"></p>
+    <a id="modalLink" class="btn" target="_blank">View on GitHub</a>
+  </div>
+</div>
+
+<!-- ================= RESUME MODAL ================= -->
+<div id="resumeModal" class="modal">
+  <div class="modal-content large">
+    <span class="close" onclick="closeResume()">&times;</span>
+    <iframe src="resume.pdf"></iframe>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
